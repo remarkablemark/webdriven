@@ -1,0 +1,6 @@
+test
+coverage
+.eslint*
+.travis*
+CHANGELOG.md
+.npmignore
