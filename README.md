@@ -1,5 +1,11 @@
 # webdriven
 
+[![NPM](https://nodei.co/npm/webdriven.png)](https://nodei.co/npm/webdriven/)
+
+[![NPM version](https://img.shields.io/npm/v/webdriven.svg)](https://www.npmjs.com/package/webdriven)
+[![Build Status](https://travis-ci.org/remarkablemark/webdriven.svg?branch=master)](https://travis-ci.org/remarkablemark/webdriven)
+[![Coverage Status](https://coveralls.io/repos/github/remarkablemark/webdriven/badge.svg?branch=master)](https://coveralls.io/github/remarkablemark/webdriven?branch=master)
+
 Helpers for [selenium-webdriver](https://www.npmjs.com/package/selenium-webdriver).
 
 ## Install
