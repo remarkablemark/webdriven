@@ -1,6 +1,6 @@
 {
   "name": "webdriven",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Helpers for selenium-webdriver.",
   "author": "Mark <mark@remarkablemark.org>",
   "main": "index.js",
