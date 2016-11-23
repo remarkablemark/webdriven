@@ -60,6 +60,15 @@ helpers
     });
 ```
 
+Take and save a screenshot:
+
+```js
+helpers.saveScreenshot('filename.png', function(error) {
+    if (error) throw error;
+    console.log('Screenshot saved successfully');
+});
+```
+
 ## Testing
 
 ```sh
