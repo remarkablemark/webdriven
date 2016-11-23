@@ -1,0 +1,14 @@
+{
+  "name": "webdriven",
+  "version": "0.0.0",
+  "description": "Helpers for selenium-webdriver.",
+  "author": "Mark <mark@remarkablemark.org>",
+  "keywords": [
+    "webdriven",
+    "webdriver",
+    "selenium",
+    "selenium-webdriver",
+    "helpers"
+  ],
+  "license": "MIT"
+}
