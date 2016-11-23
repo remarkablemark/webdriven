@@ -10,5 +10,11 @@
     "selenium-webdriver",
     "helpers"
   ],
+  "devDependencies": {
+    "selenium-webdriver": "^3.0.1"
+  },
+  "peerDependencies": {
+    "selenium-webdriver": "*"
+  },
   "license": "MIT"
 }
