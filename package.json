@@ -5,7 +5,8 @@
   "author": "Mark <mark@remarkablemark.org>",
   "main": "index.js",
   "scripts": {
-    "test": "mocha"
+    "test": "mocha",
+    "lint": "eslint ."
   },
   "keywords": [
     "webdriven",
@@ -15,6 +16,7 @@
     "helpers"
   ],
   "devDependencies": {
+    "eslint": "^3.4.0",
     "mocha": "^3.0.2",
     "selenium-webdriver": "^3.0.1"
   },
