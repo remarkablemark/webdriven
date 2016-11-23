@@ -46,6 +46,20 @@ Find elements:
 helpers.findElements('p');
 ```
 
+Check if an element is found:
+
+```js
+helpers
+    .findElements('#no-such-element')
+    .then(function(elements) {
+        if (elements.length > 0) {
+            // at least one element found
+        } else {
+            // element not found
+        }
+    });
+```
+
 ## Testing
 
 ```sh
