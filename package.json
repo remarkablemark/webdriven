@@ -3,6 +3,7 @@
   "version": "0.0.0",
   "description": "Helpers for selenium-webdriver.",
   "author": "Mark <mark@remarkablemark.org>",
+  "main": "index.js",
   "scripts": {
     "test": "mocha"
   },
