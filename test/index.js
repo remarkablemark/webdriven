@@ -14,7 +14,8 @@ describe('index', function() {
         assert.deepEqual(
             Object.keys(index(null)), [
                 'findElement',
-                'findElements'
+                'findElements',
+                'saveScreenshot'
             ]
         );
     });

@@ -9,7 +9,8 @@
 module.exports = function(driver) {
     return {
         findElement: require('./lib/findElement').bind(null, driver),
-        findElements: require('./lib/findElements').bind(null, driver)
+        findElements: require('./lib/findElements').bind(null, driver),
+        saveScreenshot: require('./lib/saveScreenshot').bind(null, driver)
     };
 };
 
