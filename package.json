@@ -8,6 +8,13 @@
     "test": "mocha",
     "lint": "eslint ."
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/remarkablemark/webdriven"
+  },
+  "bugs": {
+    "url": "https://github.com/remarkablemark/webdriven/issues"
+  },
   "keywords": [
     "webdriven",
     "webdriver",
