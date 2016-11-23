@@ -14,17 +14,12 @@ Helpers for [selenium-webdriver](https://www.npmjs.com/package/selenium-webdrive
 $ npm install webdriven
 ```
 
-## Usage
+## Getting Started
 
-First, require the package:
+Require the package and build a driver:
 
 ```js
 var webdriven = require('webdriven');
-```
-
-Then build and launch a driver:
-
-```js
 var driver = webdriven.build('chrome');
 ```
 
@@ -34,19 +29,21 @@ Now you can open a webpage:
 driver.get('http://example.com');
 ```
 
-Initialize all the helpers:
+## Helpers
+
+Initialize the helpers by invoking `webdriven` with `driver`:
 
 ```js
 var helpers = webdriven(driver);
 ```
 
-Find an element:
+#### findElement(locator[, timeout])
 
 ```js
 helpers.findElement('h1');
 ```
 
-Find elements:
+#### findElements(locator)
 
 ```js
 helpers.findElements('p');
@@ -59,14 +56,14 @@ helpers
     .findElements('#no-such-element')
     .then(function(elements) {
         if (elements.length > 0) {
-            // at least one element found
+            // at least 1 element found
         } else {
             // element not found
         }
     });
 ```
 
-Take and save a screenshot:
+#### saveScreenshot(filename, callback)
 
 ```js
 helpers.saveScreenshot('filename.png', function(error) {
