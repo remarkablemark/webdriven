@@ -64,6 +64,7 @@ helpers
 
 ```sh
 $ npm test
+$ npm run lint
 ```
 
 ## License
