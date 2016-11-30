@@ -7,7 +7,7 @@
   "scripts": {
     "test": "mocha",
     "lint": "eslint --ignore-path .gitignore .",
-    "cover": "istanbul cover _mocha -- -R spec \"test/**/*\"",
+    "cover": "istanbul cover _mocha -- \"test/*.js\"",
     "coveralls": "cat coverage/lcov.info | coveralls"
   },
   "repository": {
