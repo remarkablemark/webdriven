@@ -45,3 +45,6 @@ jspm_packages
 
 # Mac OS
 .DS_Store
+
+# Temporary files created by tests
+test/temp
