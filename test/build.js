@@ -4,8 +4,8 @@
  * Module dependencies.
  */
 var assert = require('assert');
-var test = require('selenium-webdriver/testing');
 var build = require('../lib/build');
+var test = require('selenium-webdriver/testing');
 
 /**
  * Build.
@@ -21,9 +21,24 @@ test.describe('#build', function() {
         }, Error);
     });
 
-    test.it('builds and launches a driver', function() {
+    test.it('launches a driver', function(done) {
         var driver = build('phantomjs');
         assert.equal(driver.constructor.name, 'thenableWebDriverProxy')
         driver.quit();
+        done();
     });
+
+    if (!process.env.TRAVIS) {
+        test.it('launches chrome with profile', function(done) {
+            var profilePath = 'test/temp/chrome-profile';
+            var driver = build('chrome', {
+                profile: profilePath
+            });
+            driver.getCapabilities().then(function(capabilities) {
+                assert.equal(capabilities.get('chrome').userDataDir, profilePath);
+            });
+            driver.quit();
+            done();
+        });
+    }
 });

@@ -42,7 +42,7 @@ test.describe('#saveScreenshot', function() {
     });
 
     test.it('takes and writes the screenshot', function(done) {
-        var filename = 'test/temp.png';
+        var filename = 'test/temp/save-screenshot.png';
         saveScreenshot(driver, filename, function(error) {
             if (error) throw error;
 
@@ -51,7 +51,6 @@ test.describe('#saveScreenshot', function() {
                     fs.readFileSync(filename, 'base64'),
                     data.replace('data:image/png;base64')
                 );
-                fs.unlinkSync(filename);
                 done();
             });
         });
