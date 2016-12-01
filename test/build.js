@@ -28,15 +28,17 @@ test.describe('#build', function() {
         done();
     });
 
-    test.it('launches chrome with profile', function(done) {
-        var profilePath = 'test/temp/chrome-profile';
-        var driver = build('chrome', {
-            profile: profilePath
+    if (!process.env.TRAVIS) {
+        test.it('launches chrome with profile', function(done) {
+            var profilePath = 'test/temp/chrome-profile';
+            var driver = build('chrome', {
+                profile: profilePath
+            });
+            driver.getCapabilities().then(function(capabilities) {
+                assert.equal(capabilities.get('chrome').userDataDir, profilePath);
+            });
+            driver.quit();
+            done();
         });
-        driver.getCapabilities().then(function(capabilities) {
-            assert.equal(capabilities.get('chrome').userDataDir, profilePath);
-        });
-        driver.quit();
-        done();
-    });
+    }
 });
